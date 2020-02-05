@@ -11,26 +11,28 @@ This package is all what you need to enhance, validate, and format your phone nu
 - Install the package using the below script:
 
 ```
-$ npm i -S package
+$ npm i -S @solocreativestudio/phoneformatter
 ```
 
 - Import the package helper class in the old way:
 
 ```javascript
-const { PhoneFormat } = require("./numberFormat");
+const PhoneFormat = require("@solocreativestudio/phoneformatter");
 ```
 
 or in the new way
 
 ```javascript
-import { PhoneFormat } from "./numberFormat";
-```
-or you can get it directly to your vanilla js:
-```javascript
-    <script src="https://codepen.io/Hamdongunner/pen/xxGxwZM.js"></script>
+import * as PhoneFormat from "@solocreativestudio/phoneformatter";
 ```
 
-- Use the function `getAllFormats` to get all possible formats for your phone. It accepts two arguments the first one is the number the second one it the country iso (code)
+or you can get it directly to your vanilla js:
+
+```javascript
+<script src="https://codepen.io/Hamdongunner/pen/xxGxwZM.js"></script>
+```
+
+- Use the function `getAllFormats` to get all possible formats for your phone. It accepts two arguments the first one is the number the second one it the country [iso3](https://github.com/solocreativestudio/phoneformatter/blob/master/countries.js) (code)
   ex:
 
 ```javascript
@@ -53,10 +55,11 @@ PhoneFormat.getAllFormats("٠٧٨١٠٠٠٠٩٨٣", "iq");
      currency: 'IQD',
      capital: 'Baghdad',
      continent: 'AS',
-     min: 8 
-   } 
+     min: 8
+   }
 }
 ```
+
 The number accept all kind of string or numbers you can send a string like `+(964) 000-0000`, `٠٨٩٠٠٨٨٧٧٦٦٢`, `987624k3434`
 
 - You can also use the function `knowCountry` which accepts a number and it will return the country object. ex:
@@ -71,7 +74,7 @@ PhoneFormat.knowCountry("9633984049")
   dial: '963',
   currency: 'SYP',
   capital: 'Damascus',
-  continent: 'AS' 
+  continent: 'AS'
 }
 
 // Another ex
@@ -84,11 +87,11 @@ PhoneFormat.knowCountry("1-23349385")
   dial: '1',
   currency: 'CAD',
   capital: 'Ottawa',
-  continent: 'NA' 
+  continent: 'NA'
 }
 ```
 
-You can check your country iso code from this [link]()
+You can check your country iso code from this [link](https://github.com/solocreativestudio/phoneformatter/blob/master/countries.js)
 
 Contact us if you need any other features using this email 😁
 `hamdon@solostudio.co` 😎
