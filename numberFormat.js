@@ -13,15 +13,14 @@ class PhoneFormat {
     number = number.toString().replace(/[^0-9]/gi, "");
     number = this.normalize(number);
     let country = findCountryByIso(iso);
-    let clearNumber = this.normalize(number);
-    let globalK = country.dial + clearNumber;
+    let cleanNumber = this.normalize(number);
+    let globalK = country.dial + cleanNumber;
 
-    obj.globalZ = "00" + country.dial + clearNumber;
-    obj.globalP = "+" + country.dial + clearNumber;
+    obj.globalZ = "00" + country.dial + cleanNumber;
+    obj.globalP = "+" + country.dial + cleanNumber;
     obj.globalK = globalK;
-    obj.domistic = "0" + clearNumber;
-    obj.domistic2 = clearNumber;
-    obj.domistic2 = clearNumber;
+    obj.domestic = "0" + cleanNumber;
+    obj.domestic2 = cleanNumber;
     obj.format1 = this.format(globalK, "(NNN) NNN-NNNN");
     obj.format2 = this.format(globalK, "NNN.NNN.NNNN");
     obj.country = country;
@@ -36,7 +35,6 @@ class PhoneFormat {
   static knowCountry(number) {
     number = this.convertNumbers2English(number);
     number = number.toString().replace(/[^0-9]/gi, "");
-    number = number.toString();
     if (`${number[0]}${number[1]}` == "00") number = number.substr(2);
     let str = "";
     for (let i = 0; i < 7; i++) {
