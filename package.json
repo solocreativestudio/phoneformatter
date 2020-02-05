@@ -1,0 +1,21 @@
+{
+  "name": "@solocreativestudio/phoneformatter",
+  "version": "1.0.0",
+  "description": "🔥 All what you need for phone number format 📱",
+  "main": "numberFormat.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "number",
+    "phone",
+    "formatter",
+    "formatters",
+    "phone-number",
+    "mobile",
+    "arabic",
+    "numbers"
+  ],
+  "author": "Hamdon",
+  "license": "ISC"
+}
