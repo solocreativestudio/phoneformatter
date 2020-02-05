@@ -1,6 +1,6 @@
 {
   "name": "@solocreativestudio/phoneformatter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "🔥 All what you need for phone number format 📱",
   "main": "numberFormat.js",
   "scripts": {
@@ -12,14 +12,16 @@
   },
   "keywords": [
     "number",
-    "phone",
-    "formatter",
-    "formatters",
-    "phone-number",
-    "mobile",
-    "arabic",
-    "numbers"
+    "format",
+    "numbers",
+    "phone-numbers",
+    "phone-formatter",
+    "arabic-numbers"
   ],
   "author": "Hamdon",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solocreativestudio/phoneformatter/issues"
+  },
+  "homepage": "https://github.com/solocreativestudio/phoneformatter#readme"
 }
