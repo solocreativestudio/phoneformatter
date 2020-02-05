@@ -86,4 +86,4 @@ class PhoneFormat {
   }
 }
 
-module.exports.PhoneFormat = PhoneFormat;
+module.exports = PhoneFormat;
