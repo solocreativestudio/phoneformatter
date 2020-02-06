@@ -1,6 +1,6 @@
 {
   "name": "@solocreativestudio/phoneformatter",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "🔥 All what you need for phone number format 📱",
   "main": "numberFormat.js",
   "scripts": {

@@ -42,8 +42,8 @@ PhoneFormat.getAllFormats("٠٧٨١٠٠٠٠٩٨٣", "iq");
   globalZ: '009647810000983',
   globalP: '+9647810000983',
   globalK: '9647810000983',
-  domistic: '07810000983',
-  domistic2: '7810000983',
+  domestic: '07810000983',
+  domestic2: '7810000983',
   format1: '(781) 000-0983',
   format2: '781.000.0983',
   country:
